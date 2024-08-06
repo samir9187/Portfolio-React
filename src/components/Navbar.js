@@ -37,11 +37,11 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand as={Link} to="/" className="d-flex">
           <img
             src={logo}
             className="img-fluid logo"
-            style={{ height: "3.5rem" }}
+            style={{ height: "7.5rem !important" }}
             alt="brand"
           />
         </Navbar.Brand>
@@ -95,16 +95,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
 
             <Nav.Item className="fork-btn">
               <Button
